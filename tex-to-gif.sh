@@ -15,16 +15,21 @@ usage() {
   echo "usage: $(basename "$0") [options]"
   echo
   echo "Options:"
-  echo "  -h, --help"
-  echo "  -y, --yes"
-  echo "  --tex-build <command>"
-  echo "  --tex-commits <command>"
-  echo "  --tex-pdf <pdf_file>"
-  echo "  --image-geometry <geometry>"
-  echo "  --image-tile <geometry>"
-  echo "  --animation-delay <value>"
-  echo "  --animation-file <path>"
+  echo "  -h, --help    show help"
+  echo "  -y, --yes     say 'yes' to all prompts"
   echo
+  echo "TeX Options:"
+  echo "  --tex-build <command>     how to build a document"
+  echo "  --tex-commits <command>   how to make a list of commits"
+  echo "  --tex-pdf <path>          path of PDF file"
+  echo
+  echo "Montage Options:"
+  echo "  --image-geometry <geometry>   preferred tile and border sizes"
+  echo "  --image-tile <geometry>       number of tiles per row and column"
+  echo
+  echo "Animation Options:"
+  echo "  --animation-delay <value>     display the next image after pausing"
+  echo "  --animation-file <path>       path of animation GIF file"
   exit 1
 }
 
